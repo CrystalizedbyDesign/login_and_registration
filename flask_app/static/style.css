@@ -1,0 +1,20 @@
+*{
+    margin: 0px auto;
+}
+#register_form{
+    display: flex;
+    margin-top: 20px;
+}
+#register_form{
+    float: left;
+    width: 50%;
+
+}
+
+#login_form{
+    float: right;
+    width: 50%;
+}
+.form-group, .btn, h2{
+    margin: 20px 20px;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+</head>
+<body>
+    {% if ninja_in_db %}
+        <h1 class="text-center">Welcome {{ninja_in_db.first_name}}!!!</h1>
+        <!-- Other dashboard content -->
+    {% else %}
+        <p>You are not logged in. Please log in to access the dashboard.</p>
+    {% endif %}
+
+    <a href="/"  class="btn btn-warning p-2">Log Out</a>
+</body>
+</html>
